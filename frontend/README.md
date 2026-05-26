@@ -1,16 +1,47 @@
-# React + Vite
+# Frontend（React + Vite）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+本目錄為點餐系統前端介面，提供註冊、登入、菜單瀏覽、購物車與下單功能。
 
-Currently, two official plugins are available:
+## 需求
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 18+
+- npm
 
-## React Compiler
+## 安裝
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+## 啟動與建置
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+開發模式：
+
+```bash
+npm run dev
+```
+
+建置：
+
+```bash
+npm run build
+```
+
+預覽建置結果：
+
+```bash
+npm run preview
+```
+
+程式碼檢查：
+
+```bash
+npm run lint
+```
+
+## 預設位址
+
+- 前端（Vite）：`http://localhost:5173`
+- 後端 API（預設）：`http://localhost:5000/api`
+
+> 使用前請先啟動 backend 服務，否則前端將無法取得菜單與送出訂單。
